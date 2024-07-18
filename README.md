@@ -1,1 +1,1 @@
-# dataiq
+# DataIQ
