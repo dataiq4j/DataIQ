@@ -10,7 +10,7 @@
     <artifactId>core-backend</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>application</module>
+        <module>application-core</module>
         <module>langchain-core</module>
         <module>langchain-sensenova</module>
     </modules>

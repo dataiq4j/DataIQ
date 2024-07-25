@@ -1,6 +1,5 @@
-package io.dataiq.entities.chat.message;
+package io.dataiq.data.common.web.response;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
@@ -12,11 +11,14 @@ import lombok.Data;
  *
  * @author xienng
  * @version 1.0
- * @date 2024年07月12日 10:41
+ * @date 2024年07月19日 14:32
  */
 @Data
-@AllArgsConstructor
-public class ChatText {
+public class Response<T> {
+    private T data;
 
-    private String content;
+    /**
+     * 当出现错误时的返回
+     */
+    private Error  error;
 }

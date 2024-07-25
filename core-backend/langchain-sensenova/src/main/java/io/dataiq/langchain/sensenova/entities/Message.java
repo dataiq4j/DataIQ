@@ -1,6 +1,5 @@
-package io.dataiq.entities.chat.message;
+package io.dataiq.langchain.sensenova.entities;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
@@ -12,11 +11,11 @@ import lombok.Data;
  *
  * @author xienng
  * @version 1.0
- * @date 2024年07月12日 10:41
+ * @date 2024年07月12日 11:35
  */
 @Data
-@AllArgsConstructor
-public class ChatText {
+public class Message {
 
+    private String role;
     private String content;
 }

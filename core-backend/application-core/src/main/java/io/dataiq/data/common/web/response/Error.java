@@ -1,7 +1,8 @@
-package io.dataiq.entities.chat.message;
+package io.dataiq.data.common.web.response;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
+
+import java.util.List;
 
 /**
  * [简要描述类用途]
@@ -12,11 +13,11 @@ import lombok.Data;
  *
  * @author xienng
  * @version 1.0
- * @date 2024年07月12日 10:41
+ * @date 2024年07月19日 18:10
  */
 @Data
-@AllArgsConstructor
-public class ChatText {
-
-    private String content;
+public class Error {
+    private Integer code;
+    private String message;
+    private List<String> details;
 }

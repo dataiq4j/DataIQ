@@ -1,4 +1,4 @@
-package io.dataiq.langchain.sensenova.entities.chat;
+package io.dataiq.langchain.sensenova.entities;
 
 /**
  * [简要描述类用途]
@@ -9,7 +9,7 @@ package io.dataiq.langchain.sensenova.entities.chat;
  *
  * @author xienng
  * @version 1.0
- * @date 2024年07月12日 11:35
+ * @date 2024年07月18日 15:33
  */
-public class Message {
+public class KnowledgeBaseResults {
 }

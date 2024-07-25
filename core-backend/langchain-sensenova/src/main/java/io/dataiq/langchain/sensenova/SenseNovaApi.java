@@ -1,12 +1,11 @@
 package io.dataiq.langchain.sensenova;
 
-import io.dataiq.langchain.sensenova.entities.ChatCompletionRequest;
+import io.dataiq.langchain.sensenova.request.ChatCompletionRequest;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
-import retrofit2.http.Streaming;
 
 /**
  * [简要描述类用途]
@@ -20,10 +19,8 @@ import retrofit2.http.Streaming;
  * @date 2024年07月12日 11:26
  */
 public interface SenseNovaApi {
-
-    @Streaming
-    @POST("api/paas/v4/chat/completions")
+    @POST("v1/llm/chat-completions")
     @Headers({"Content-Type: application/json"})
-    Call<ResponseBody> streamingChatCompletion(@Body ChatCompletionRequest request);
+    Call<ResponseBody> chatCompletion(@Body ChatCompletionRequest request);
 
 }

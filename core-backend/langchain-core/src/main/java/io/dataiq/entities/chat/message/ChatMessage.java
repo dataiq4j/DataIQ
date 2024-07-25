@@ -13,7 +13,7 @@ import io.dataiq.entities.chat.enums.ChatMessageRole;
  * @version 1.0
  * @date 2024年07月12日 10:29
  */
-public interface ChatMessage {
+public class ChatMessage {
 
 
     /**

@@ -1,7 +1,4 @@
-package io.dataiq.entities.chat.message;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
+package io.dataiq.langchain.sensenova.entities;
 
 /**
  * [简要描述类用途]
@@ -12,11 +9,9 @@ import lombok.Data;
  *
  * @author xienng
  * @version 1.0
- * @date 2024年07月12日 10:41
+ * @date 2024年07月18日 15:14
  */
-@Data
-@AllArgsConstructor
-public class ChatText {
+public class ToolConfig {
 
-    private String content;
+    private  WebSearchConfig  webSearch;
 }

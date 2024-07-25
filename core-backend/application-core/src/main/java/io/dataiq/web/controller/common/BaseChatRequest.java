@@ -1,6 +1,6 @@
-package io.dataiq.entities.chat.message;
+package io.dataiq.web.controller.common;
 
-import lombok.AllArgsConstructor;
+import io.dataiq.entities.chat.enums.ChatMode;
 import lombok.Data;
 
 /**
@@ -12,11 +12,10 @@ import lombok.Data;
  *
  * @author xienng
  * @version 1.0
- * @date 2024年07月12日 10:41
+ * @date 2024年07月22日 11:16
  */
 @Data
-@AllArgsConstructor
-public class ChatText {
+public class BaseChatRequest {
 
-    private String content;
+    private ChatMode mode;
 }

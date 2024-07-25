@@ -20,5 +20,15 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>4.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.dataiq</groupId>
+            <artifactId>langchain-core</artifactId>
+            <version>${dataiq.version}</version>
+        </dependency>
     </dependencies>
 </project>
